@@ -1,3 +1,5 @@
+
+
 .carousel-open:checked + .carousel-item {
   position: static;
   opacity: 100;
@@ -67,4 +69,8 @@
   .h-128 {
     height: 32rem;
   }
+}
+
+.logo{
+  font-family: 'Sonsie One', cursive;
 }
