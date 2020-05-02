@@ -53,28 +53,28 @@
 /* Small (sm) */
 @media (min-width: 640px) {
   .h-128 {
-    height: 32rem;
+    height: 40rem;
   }
 }
 
 /* Medium (md) */
 @media (min-width: 768px) {
   .h-128 {
-    height: 32rem;
+    height: 40rem;
   }
 }
 
 /* Large (lg) */
 @media (min-width: 1024px) {
   .h-128 {
-    height: 32rem;
+    height: 40rem;
   }
 }
 
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
   .h-128 {
-    height: 32rem;
+    height: 40rem;
   }
 }
 
