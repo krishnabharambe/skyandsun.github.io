@@ -2,202 +2,180 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-
-        body {
-            background: #EEEEF4;
-            color: #999;
-            font-family: Roboto;
-        }
-
-        h1 {
-            font-weight: 100;
-            font-size: 35pt;
-            color: #E43;
-        }
-
-        p {
-            font-weight: 300;
-        }
-
-        .absolute {
-            position: absolute;
-        }
-
-        .warning-content {
-            top: 25%;
-            max-width: 500px;
-            text-align: center;
-            margin: auto;
-        }
-
-        .button {
-            border: none;
-            background-color: #FF7486;
-            padding: 20px 55px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19);
-            color: #fff;
-            text-transform: uppercase;
-            margin-top: 15px;
-            cursor: pointer;
-        }
-
-        /*/////////////////////////    svg    //////////////////////////////*/
-
-        svg#pennello {
-            width: 130px;
-        }
-
-        .vernice {
-            fill: none;
-            stroke: #FF5886;
-            stroke-width: 211px;
-            stroke-dasharray: 525px;
-            stroke-dashoffset: 460px;
-            transition: all 3s;
-        }
-
-        .verniceOver {
-            stroke-dashoffset: 0px;
-        }
-
-        .brush {
-            transform: translateY(-456px);
-            transition: all 3s;
-        }
-
-        .brushOver {
-            transform: translateY(0px);
-        }
-
-        .gocce {
-            opacity: 0;
-            transition: all 1s;
-        }
-
-        .gocceOver {
-            opacity: 1;
-            transition-delay: 3s;
-        }
-
-        .st0 {
-            fill: none;
-            stroke: #FF5886;
-            stroke-width: 201;
-            stroke-miterlimit: 10;
-        }
-
-        .st2 {
-            fill: none;
-        }
-
-        .st3 {
-            fill: none;
-            stroke: #282828;
-            stroke-width: 5.908;
-            stroke-linecap: round;
-            stroke-miterlimit: 10;
-        }
-
-        .st4 {
-            fill: #FF0086;
-        }
-
-        .st5 {
-            fill: #FF5886;
-        }
-
-        .st6 {
-            fill: #FF7486;
-        }
-
-        .st7 {
-            fill: none;
-            stroke: #282828;
-            stroke-width: 11.8159;
-            stroke-miterlimit: 10;
-        }
-
-        .st8 {
-            fill: #53D398;
-        }
-
-        .st9 {
-            fill: #439B6F;
-        }
-
-        .st10 {
-            fill: none;
-            stroke: #282828;
-            stroke-width: 2.954;
-            stroke-miterlimit: 10;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky and Sun Salon</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
 </head>
 
 <body>
-
-    <div class="warning-content">
-
-        <svg version="1.1" id="pennello" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 264 696.1" style="enable-background:new 0 0 264 696.1;" xml:space="preserve">
-            <style type="text/css">
-            </style>
-            <line class="vernice" class="st1" x1="119.9" y1="0" x2="119.9" y2="520" />
-            <line id="vernice-linea" class="st2" x1="119.9" y1="0" x2="119.9" y2="520" />
-            <g class="gocce">
-                <path class="st3" d="M164.8,339.4h5.4c3.3,0,6,2.7,6,6v17.4" />
-                <path class="st3" d="M176.3,375v6.7c0,3.3,2.7,6,6,6h0c3.3,0,6-2.7,6-6v-48.3c0-3.3,2.7-6,6-6h0c3.3,0,6,2.7,6,6l0,0
-              c0,3.3,2.7,6,6,6l0,0c3.3,0,6-2.7,6-6v-6.7" />
-            </g>
-
-            <g class="brush">
-                <g id="spazzola">
-                    <path class="st4" d="M225.8,476v79.4c0,7.4-6,13.5-13.5,13.5H26.6c-7.4,0-13.5-6-13.5-13.5V476c0-7.4,6-13.5,13.5-13.5h185.7
-                  C219.8,462.5,225.8,468.5,225.8,476z" />
-                    <path class="st5" d="M226.4,530.8c0-8-1.3-65.8-6.6-65.8H18.9c-5.3,0-5.2,57.9-5.2,65.8l0,0c0,8,4.3,14.2,9.6,14.2h193.5
-                  C222.1,545,226.4,538.8,226.4,530.8L226.4,530.8z" />
-                    <path class="st6" d="M225.6,505c0-2.8-4.3-5-9.6-5H22.5c-5.3,0-9.6,2.2-9.6,5l0,0c0,2.8,4.3,5,9.6,5H216
-                  C221.3,510,225.6,507.8,225.6,505L225.6,505z" />
-                    <path class="st6" d="M225.6,476.5c0-5.6-4.3-10.5-9.6-10.5H22.5c-5.3,0-9.6,4.9-9.6,10.5l0,0c0,5.6,4.3,10.5,9.6,10.5H216
-                  C221.3,487,225.6,482.1,225.6,476.5L225.6,476.5z" />
-                    <path class="st7" d="M13.1,476v79.4c0,7.4,6,13.5,13.5,13.5h185.7c7.4,0,13.5-6,13.5-13.5V476c0-7.4-6-13.5-13.5-13.5H26.6
-                  C19.2,462.5,13.1,468.5,13.1,476z" />
-                </g>
-                <path id="asta" class="st7" d="M119.3,621.3v-12.4c0-7.4,6-13.5,13.5-13.5h106c7.4,0,13.5-6,13.5-13.5v-52.8c0-7.4-6-13.5-13.5-13.5
-              h-12.4" />
-                <g id="manico">
-                    <path class="st8"
-                        d="M118.8,622v48.4c0.2,0,0.4-0.1,0.6-0.1c1.2-0.3,2.4,0,3.4,1c1.2,1.2,2.4,3.8,1,5.3c-0.3,0.3-0.6,0.3-0.9,0.1
-                  c-0.3,0.3-0.6,0.6-1,0.9c-0.2,0.2-0.5,0.5-0.8,0.6c-0.5,0.2-1,0.1-1.5-0.1c-0.2,0-0.5-0.1-0.7-0.2v8.3l17.6-1.6l-5.2-62.6H118.8z" />
-                    <path class="st9" d="M119.6,678.1c-0.4-0.1-0.8-0.2-1.3-0.4c-1.5-0.8-2.1-2.4-1.8-4c0-0.1,0-0.2,0-0.3c0-0.2,0.1-0.4,0.2-0.7
-                  c0-0.2,0.1-0.4,0.1-0.6c0.5-1.3,1.5-1.9,2.6-1.8c0.2-0.1,0.5-0.1,0.7-0.1V622h-12.4l-2.7,61.2l15.1,3.1v-8
-                  C119.9,678.2,119.7,678.2,119.6,678.1z" />
-                    <path class="st7" d="M103.2,635.5l-2.2,39.7c0,7.4,9.5,13.3,18.4,13.3h0.9c9.1,0,18.9-5.9,18.6-13.5l-3.3-39.9
-                  c-0.2-7.3-7.4-13.1-16.2-13.1c-4.5,0-8.5,1.5-11.4,4C105,628.4,103.2,631.8,103.2,635.5z" />
-                    <path class="st10"
-                        d="M124.7,674.2c0,2.6-2.1,4.7-4.7,4.7s-4.7-2.1-4.7-4.7c0-2.6,2.1-4.7,4.7-4.7S124.7,671.6,124.7,674.2z" />
-                </g>
-            </g>
-        </svg>
-        <h1>site under construction</h1>
-        <p>I'm working to put online as soon my new site.</p>
-        <p id="both">Help me to color it ! :)</p>
-        <button class="button">Help!</button>
-
+    <!-- header -->
+    <div class="text-gray-800 hidden sm:block">
+        <div class="container mx-auto py-2">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+                <div class="hidden sm:block">
+                    Welcome to Sky & Sun Salon
+                </div>
+                <div class="text-right mr-2 sm:mr-0">
+                    <i class="fa fa-phone" aria-hidden="true"> 7020818756</i>
+                    <i class="fa fa-envelope" aria-hidden="true">
+                        skyandsun@gmail.com</i>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- menu -->
+    <div class="header py-3">
+        <div class="container mx-auto sm:flex sm:items-center sm:justify-between">
+            <div class="flex items-center text-gray-800 justify-between">
+                <div class="">
+                    <span class="ml-2 sm:ml-0 text-xl sm:text-3xl font-medium logo">Sky & Sun </span><span
+                        class="logo text-xs sm:text-sm">Unisex Salon</span>
+                </div>
+                <div class="sm:hidden">
+                    <button id="menuButton"
+                        class="block mr-2 sm:mr-0 hover:text-gray-800 focus:text-gray-800 focus:outline-none">
+                        <svg class="menuicon fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="24px" height="24px">
+                            <path
+                                d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z" />
+                        </svg>
+                        <svg class="menuicon hidden fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="24px" height="24px">
+                            <path
+                                d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="menus" class="hidden sm:flex">
+                <a class="block mt-1 py-2 text-gray-700 font-light sm:font-normal hover:bg-gray-400 rounded focus:bg-gray-400 px-2 sm:mx-3"
+                    href="./../index.html">Home</a>
+                <a class="block mt-1 py-2 text-gray-700 font-light sm:font-normal hover:bg-gray-400 rounded focus:bg-gray-400 px-2 sm:mx-3"
+                    href="./services.html">Services</a>
+                <a class="block mt-1 py-2 text-gray-700 font-light sm:font-normal hover:bg-gray-400 rounded focus:bg-gray-400 px-2 sm:mx-3"
+                    href="./gallery.html">Gallery</a>
+                <a class="block mt-1 py-2 text-gray-700 font-light sm:font-normal hover:bg-gray-400 rounded focus:bg-gray-400 px-2 sm:mx-3"
+                    href="./about.html">About</a>
+                <a class="block mt-1 py-2 text-gray-700 font-light sm:font-normal hover:bg-gray-400 rounded focus:bg-gray-400 px-2 sm:ml-3"
+                    href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container mx-auto text-center my-16">
+            <p class="text-4xl underline">Contact Us</p>
+        </div>
+        <section class="bg-white ">
+            <div class="container mx-auto grid cols-1 sm:grid-cols-2">
+                <div class="text-right w-full h-128">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.792563219857!2d76.19364473767801!3d20.514728186278997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda1d230d2948af%3A0x76ab199d250ca9eb!2sSKY%20%26%20SUN%20-%20Best%20Unisex%20Salon!5e0!3m2!1sen!2sin!4v1588580957248!5m2!1sen!2sin" class="h-full w-full" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="mt-4 text-blue-800 ">
+                        <a class="p-3 rounded hover:bg-gray-400" href="https://goo.gl/maps/jXYvGLpoKGKVeZzH7" target="_blank" rel="noopener noreferrer">Open in Map</a>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <p class="text-gray-900 font-normal text-xl sm:text-2xl  pt-8 sm:pt-0">Contact</p>
+                    <p class="text-gray-200 leading-loose font-light">
+                        <p class="pt-2  text-gray-800"><span class="font-bold">Address : </span> near Cafe Navygator,<br>
+                            opposite of Golande Lawn,<br> Shrikrushna Nagar,<br> Ashtavinayak Nagar, <br>Buldana, Maharashtra 443001</p>
+                        <p class="pt-2 text-gray-800"><span class="font-bold">Contact : </span>+91 70208 18756 / +91
+                            72188 21750</p>
+                        <p class="pt-2 text-gray8500"><span class="font-bold">Mail : </span> skyandsun96@gmail.com</p>
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <div class="bg-gray-900 mt-16">
+        <div class="container mx-auto py-8">
+            <div class="grid grid-cols-1 sm:grid-cols-3 p-4">
+                <div>
+                    <p class="logo text-gray-200 text-2xl sm:text-3xl">Sky & Sun</p>
+                    <p class="logo text-gray-200 text-xs sm:text-sm">Unisex Salon</p>
+                </div>
+                <div>
+                    <p class="text-white font-normal text-xl sm:text-2xl pt-8 sm:pt-0">Links</p>
+
+                    <a class="block mt-1 py-2 text-gray-500 font-light sm:font-normal hover:text-gray-200 rounded focus:text-gray-200"
+                        href="./../index.html">Home</a>
+                    <a class="block mt-1 py-2 text-gray-500 font-light sm:font-normal hover:text-gray-200 rounded focus:text-gray-200"
+                        href="./services.html">Services</a>
+                    <a class="block mt-1 py-2 text-gray-500 font-light sm:font-normal hover:text-gray-200 rounded focus:text-gray-200"
+                        href="./gallery.html">Gallery</a>
+                    <a class="block mt-1 py-2 text-gray-500 font-light sm:font-normal hover:text-gray-200 rounded focus:text-gray-200"
+                        href="./about.html">About</a>
+                    <a class="block mt-1 py-2 text-gray-500 font-light sm:font-normal hover:text-gray-200 rounded focus:text-gray-200"
+                        href="./contact.html">Contact</a>
+
+                </div>
+                <div>
+                    <p class="text-white font-normal text-xl sm:text-2xl  pt-8 sm:pt-0">Contact</p>
+                    <p class="text-gray-200 font-light">
+
+                        <p class="pt-2 text-gray-500"><span class="font-bold">Address : </span> near Cafe Navygator,
+                            opposite of Golande
+                            Lawn, Shrikrushna Nagar, Ashtavinayak Nagar, Buldana, Maharashtra 443001</p>
+                        <p class="pt-2 text-gray-500"><span class="font-bold">Contact : </span>+91 70208 18756 / +91
+                            72188 21750</p>
+                        <p class="pt-2 text-gray-500"><span class="font-bold">Mail : </span> skyandsun96@gmail.com</p>
+                    </p>
+                </div>
+            </div>
+            <div class="py-4 p-4 pt-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2">
+                    <div>
+                        <p class="text-gray-500">Copyright ©2019
+                            <script>new Date().getFullYear() > 2019 && document.write("- " + new Date().getFullYear());</script>
+                            All rights reserved
+                        </p>
+                    </div>
+                    <div class="text-center mt-5 sm:mt-0 sm:text-right">
+                        <a href="https://www.instagram.com/skyandsunsalon/" target="_blank" rel="noopener noreferrer"><i class="px-3 fa fa-instagram fa-2x text-gray-500 hover:text-gray-200" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/suraj.hiwarkar.351/timeline?lst=100009376856294%3A100005874767179%3A1588579416" target="_blank" rel="noopener noreferrer"><i class="px-3 fa fa-facebook fa-2x text-gray-500 hover:text-gray-200"></i></a>
+                        <a href="mailto:skyandsun96@gmail.com"><i class="px-3 fa fa-envelope fa-2x text-gray-500 hover:text-gray-200" aria-hidden="true"></i></a>
+                        <a href="tel:+917020818756" rel="noopener noreferrer"><i class="px-3 fa fa-phone fa-2x text-gray-500 hover:text-gray-200" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/917020818756" rel="noopener noreferrer"><i class="pl-3 fa fa-whatsapp fa-2x text-gray-500 hover:text-gray-200" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+        integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
     <script>
-        jQuery(document).ready(function () {
-            $('.button').on('click', function () {
-                $(".vernice").attr("class", "vernice verniceOver");
-                $(".brush").attr("class", "brush brushOver");
-                $(".gocce").attr("class", "gocce gocceOver");
+        $("#menuButton").click(function () {
+            $("#menus").toggleClass("hidden");
+            $(".menuicon").toggleClass("hidden");
+        });
+
+        $('img[data-enlargable]').addClass('img-enlargable').click(function () {
+            var src = $(this).attr('src');
+            var modal;
+            function removeModal() { modal.remove(); $('body').off('keyup.modal-close'); }
+            modal = $('<div>').css({
+                background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+                backgroundSize: 'contain',
+                width: '100%', height: '100%',
+                position: 'fixed',
+                zIndex: '10000',
+                top: '0', left: '0',
+                cursor: 'zoom-out'
+            }).click(function () {
+                removeModal();
+            }).appendTo('body');
+            //handling ESC
+            $('body').on('keyup.modal-close', function (e) {
+                if (e.key === 'Escape') { removeModal(); }
             });
         });
     </script>
